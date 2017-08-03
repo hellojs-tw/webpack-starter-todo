@@ -3,7 +3,7 @@ import getForm from "./lib/form.data.js";
 import insertData from "./lib/insertData.js";
 import deleteData from "./lib/deleteData.js";
 import updateData from "./lib/updateData.js";
-
+import getTodo from "./lib/todo.data.js";
 
 
 let form = $("form");
@@ -21,29 +21,29 @@ form.on('submit', function (e) {
 	}
 });
 
-//刪除按鈕
+//Delete button
 todo.on('click', ".btnDel",function(e) {	//e: EventObject
 	//$(this).parent().remove();
 	deleteData($(this));
 	console.log($(this));
 });
 
-//更改按鈕
+//Update button
 todo.on('click', '.btnUpd', function(e) {
 	updateData($(this));
 	console.log($(this));
 });
 
-//呈交按鈕
-todo.on('submit', '.btnSubmit', function(e) {
+//按下Updata後出現的Submit button
+todo.on('click', '.btnSubmit', function(e) {
 	e.preventDefault();
 	var value = getTodo(e);
 
 	console.log($(this));
-	submitData($(this));
+	
 });
 
-//取消按鈕
+//按下Updata後出現的Cancel button
 todo.on('click', '.btnCancel', function(e){
 	//cancel($(this));
 	console.log($(this));
