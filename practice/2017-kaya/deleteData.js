@@ -1,14 +1,14 @@
 import $ from 'jquery';
 
 
-// document.querySelector('button').addEventListener("click", deleteData);
+//document.querySelector('button').addEventListener("click", deleteData);
 
 function deleteData(event){
-    console.log('evt', event)
     var selected_btn = event.target
+    console.log('btn', selected_btn)
     var parent = selected_btn.parentElement
     var grandParent = parent.parentElement
-    grandParent.parentElement.removeChild(grandParent)
+    grandParent.removeChild(parent)
     //$(this).closest("li").remove(); 
 }
 
