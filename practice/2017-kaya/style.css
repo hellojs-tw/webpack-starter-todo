@@ -1,0 +1,15 @@
+li {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+button {
+    height: 7px;
+    margin: 0 0 0 10px;
+}
+
+p {
+    margin: 0;
+}
