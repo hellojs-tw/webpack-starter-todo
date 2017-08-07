@@ -1,0 +1,14 @@
+div {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+button {
+    height: 7px;
+}
+
+p {
+    margin: 0;
+}
