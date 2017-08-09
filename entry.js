@@ -4,12 +4,9 @@ import insertData from "./lib/insertData.js";
 
 let form = $("form");
 
-form.on('submit', function (e) {
-	e.preventDefault();
-	var value = getForm(e);
-	insertData(value);
-	alert(`Add item: ${value}`);
+form.on('submit', function(e) {
+    e.preventDefault();
+    var value = getForm(e);
+    insertData(value);
+    alert(`Add item: ${value}`);
 });
-
-
-
